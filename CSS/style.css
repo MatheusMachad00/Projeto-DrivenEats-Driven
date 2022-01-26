@@ -206,9 +206,32 @@ section{
 }
 
 /*footer*/
-.footer{
+footer{
+    display: flex;
+    justify-content: center;
     position: sticky;
     left: 0;
     bottom: 0;
+    right: 0;
     width: 100%;
+    height: 92px;
+    background-color: #fff;
+}
+footer button{
+    width: 364px;
+    height: 61px;
+    margin: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #CBCBCB;
+    margin-top: px;
+}
+button p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+.box:hover {
+    background-color: red;
 }
