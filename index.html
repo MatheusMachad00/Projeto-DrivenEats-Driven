@@ -22,21 +22,21 @@
     <main>
         <div class="section__header">Primeiro, seu prato</div>
         <section class="section__body comida">
-            <div class="section__primeiro_prato box mc1 bife" onclick="removerBorda('bife', 'Donburi com Bife Chaliapin', '37.9')">
+            <div data-identifier="food-option" class="section__primeiro_prato box mc1 bife" onclick="removerBorda('bife', 'Donburi com Bife Chaliapin', 37.9)">
                 <img src="imagens/Chaliapin_Steak_Don.png" alt="Chaliapin_Steak_Don">
                 <a>Donburi com Bife Chaliapin</a>
                 <p>Bife macio, donburi delicioso</p>
                 <p class="section__preco">R$ 37,90</p>
                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="section__primeiro_prato box curry" onclick="removerBorda('curry', 'Omurice de risoto de curry', '23.5')">
+            <div data-identifier="food-option" class="section__primeiro_prato box curry" onclick="removerBorda('curry', 'Omurice de risoto de curry', 23.5)">
                 <img src="imagens/Curry_Risotto_Omurice.png" alt="Curry_Risotto_Omurice">
                 <a>Omurice de risoto de curry</a>
                 <p>Omurice delicioso, curry especial</p>
                 <p class="section__preco">R$ 23,50</p>
                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="section__primeiro_prato box mapo" onclick="removerBorda('mapo', 'Mapo doufu', '34.2')">
+            <div data-identifier="food-option" class="section__primeiro_prato box mapo" onclick="removerBorda('mapo', 'Mapo doufu', 34.2)">
                 <img src="imagens/Mapo_Doufu.jpg" alt="Mapo_Doufu">
                 <a>Mapo doufu</a>
                 <p>Apimentado, sabor incomparável</p>
@@ -47,21 +47,21 @@
         </section>
         <div class="section__header">Agora, sua bebida</div>
         <section class="section__body bebida">
-            <div class="section__bebida mc1 box vinho" onclick="removerBorda2('vinho', 'Vinho importado', '124.99')">
+            <div data-identifier="food-option" class="section__bebida mc1 box vinho" onclick="removerBorda2('vinho', 'Vinho importado', 124.99)">
                 <img src="imagens/wine.png" alt="wine">
                 <a>Vinho importado</a>
                 <p>Garrafa 750ml</p>
                 <p class="section__preco">R$ 124,99</p>
                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="section__bebida box sake" onclick="removerBorda2('sake','Saque importado', '84.90')">
+            <div data-identifier="food-option" class="section__bebida box sake" onclick="removerBorda2('sake','Saque importado', 84.90)">
                 <img src="imagens/sake_bottle.jpg" alt="sake_bottle">
                 <a>Saque importado</a>
                 <p>Garrafa 750ml</p>
                 <p class="section__preco">R$ 84,90</p>
                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="section__bebida box cerva" onclick="removerBorda2('cerva','Cerveja stout japonesa', '19.9')">
+            <div data-identifier="food-option" class="section__bebida box cerva" onclick="removerBorda2('cerva','Cerveja stout japonesa', 19.9)">
                 <img src="imagens/Stout_beer.jpg" alt="Stout_beer">
                 <a>Cerveja stout japonesa</a>
                 <p>Garrafa 500ml</p>
@@ -71,21 +71,21 @@
         </section>
         <div class="section__header">Por fim, sua sobremesa</div>
         <div class="section__body sobremesa">
-            <div class="section__sobremesa mc1 box souffle" onclick="removerBorda3('souffle', 'Soufflé Léger de Grâce', '29.9')">
+            <div data-identifier="food-option" class="section__sobremesa mc1 box souffle" onclick="removerBorda3('souffle', 'Soufflé Léger de Grâce', 29.9)">
                 <img src="imagens/Souffle_Leger_de_Grace.png" alt="Souffle_Leger_de_Grace">
                 <a>Soufflé Léger de Grâce</a>
                 <p>Verdadeira sobremesa francesa</p>
                 <p class="section__preco">R$ 29,90</p>
                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="section__sobremesa box dorayaki" onclick="removerBorda3('dorayaki', 'Dorayaki', '11.9')">
+            <div data-identifier="food-option" class="section__sobremesa box dorayaki" onclick="removerBorda3('dorayaki', 'Dorayaki', 11.9)">
                 <img src="imagens/Dorayaki.png" alt="Dorayaki">
                 <a>Dorayaki</a>
                 <p>Delicioso dorayaki</p>
                 <p class="section__preco">R$ 11,90</p>
                 <ion-icon class="check" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="section__sobremesa box lemon" onclick="removerBorda3('lemon', 'Lemon Curd Italiano Semifreddo', '21.99')">
+            <div data-identifier="food-option" class="section__sobremesa box lemon" onclick="removerBorda3('lemon', 'Lemon Curd Italiano Semifreddo', 21.99)">
                 <img src="imagens/Lemon_Curd_Italiano_Semifreddo.png" alt="Lemon_Curd_Italiano_Semifreddo">
                 <a>Lemon Curd Italiano Semifreddo</a>
                 <p>Um pedaço da Itália</p>
@@ -95,7 +95,7 @@
         </div>
     </main>
     <footer>
-        <button class="pedidoFinalizado" onclick="ConfirmarPedido()">
+        <button class="pedidoFinalizado" onclick="finalizarPedido()">
         Selecione os 3 itens<br>para fechar o pedido
         </button>
     </footer>
